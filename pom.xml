@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com.viniciusOliveira</groupId>
+  <artifactId>LabBD-ProceduresMaven</artifactId>
+  <version>0.0.1</version>
+  <packaging>war</packaging>
+  <name>LabBD-ProceduresMaven</name>
+  <description>LabBD-ProceduresMaven</description>
+  
+   <properties>
+	<java.version>8</java.version>
+	<maven.compiler.source>${java.version}</maven.compiler.source>
+	<maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+  <build>
+	  <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-war-plugin</artifactId>
+		    <version>3.3.2</version>
+		</plugin>
+	  </plugins>
+  </build>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->
+	<dependency>
+	    <groupId>org.glassfish.web</groupId>
+	    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+	    <version>2.0.0</version>
+	      <scope>provided</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp/jakarta.servlet.jsp-api -->
+	<dependency>
+	    <groupId>jakarta.servlet.jsp</groupId>
+	    <artifactId>jakarta.servlet.jsp-api</artifactId>
+	    <version>3.1.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+	<dependency>
+	    <groupId>org.apache.tomcat</groupId>
+	    <artifactId>tomcat-catalina</artifactId>
+	    <version>10.1.0-M17</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+	<dependency>
+	    <groupId>com.microsoft.sqlserver</groupId>
+	    <artifactId>mssql-jdbc</artifactId>
+	    <version>11.2.0.jre8</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->
+	<dependency>
+	    <groupId>org.glassfish.web</groupId>
+	    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+	    <version>2.0.0</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+	<dependency>
+	    <groupId>jakarta.servlet.jsp.jstl</groupId>
+	    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+	    <version>2.0.0</version>
+	</dependency>
+	
+  </dependencies>
+</project>
